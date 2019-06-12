@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Wiki search</title>
+        <meta charset="UTF-8">
+        <link href="css.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="main full">
+            <section class="sidebar">
+                <header>
+	            <h1>WikiPedia Search</h1>
+	        </header>
+
+	        <div>
+                    <input id="search" type="text" name="search">
+                </div>
+
+	        <div>
+	            <a href='https://fr.wikipedia.org/wiki/Special:Random' targuet="_blank">>>>Random Article<<<</a>
+	        </div>
+	
+                <div>
+	            <h2>Search Historic</h2>
+	            <ul class="history"></ul>
+	        </div>
+
+	        <footer>-- A MecyDev creation --</footer>
+            </section>
+
+	    <section class="content">
+	        <div class="resultats">
+	            <ul id="results"></ul>
+	        </div>
+	    </section>
+        </div>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='js.js'></script>
+
+    </body>
+</html>
