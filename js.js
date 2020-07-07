@@ -3,7 +3,7 @@ const urlTo = 'https://fr.wikipedia.org/?curid=';
 
 function getSearch(search) {
   $.ajax({
-    url: `https://fr.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=8&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=${search}&callback=JSON_CALLBACK`,
+    url: `https://fr.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=${search}&callback=JSON_CALLBACK`,
     type: 'GET',
     dataType: 'jsonp',
     success: function (reponse) {
